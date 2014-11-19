@@ -2,20 +2,42 @@
 (function() {
   var app;
 
-  app = angular.module('store', ['ngRoute', 'ngAnimate']);
-
-  app.controller('storeController', function() {
-    this.pages = pages;
-  });
+  app = angular.module('wphax', ['ngRoute', 'ngAnimate']);
 
   app.config(function($routeProvider) {
     $routeProvider.when('/', {
-      templateUrl: 'home.html'
+      templateUrl: 'home.html',
+      resolve: {
+        delay: function($q, $timeout) {
+          var delay;
+          delay = $q.defer();
+          $timeout(delay.resolve, 500);
+          return delay.promise;
+        }
+      }
     }).when('/about', {
-      templateUrl: 'about.html'
+      templateUrl: 'about.html',
+      resolve: {
+        delay: function($q, $timeout) {
+          var delay;
+          delay = $q.defer();
+          $timeout(delay.resolve, 500);
+          return delay.promise;
+        }
+      }
     }).when('/work', {
-      templateUrl: 'work.html'
-    });
+      templateUrl: 'work.html',
+      resolve: {
+        delay: function($q, $timeout) {
+          var delay;
+          delay = $q.defer();
+          $timeout(delay.resolve, 500);
+          return delay.promise;
+        }
+      }
+    }).otherwise('/');
   });
+
+  (function($) {})(jQuery);
 
 }).call(this);

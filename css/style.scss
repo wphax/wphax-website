@@ -67,30 +67,23 @@ body {
 	display: table-cell;
 	vertical-align: middle;
 
-	h1.ng-enter {  
-		-webkit-animation: fadeInDown 1s;
-		-moz-animation: fadeInDown 1s;
-		-ms-animation: fadeInDown 1s;
-		animation: fadeInDown 1s;
-	}
-
-	h2.ng-enter {  
-		-webkit-animation: fadeInUp 1s;
-		-moz-animation: fadeInUp 1s;
-		-ms-animation: fadeInUp 1s;
-		animation: fadeInUp 1s;
-	}
-
-	p.ng-enter {
-		-webkit-animation: fadeInUp 1s;
-		-moz-animation: fadeInUp 1s;
-		-ms-animation: fadeInUp 1s;
-		animation: fadeInUp 1s;
-	}
-
 	h1 {
 		color: #FFD34E;
 		font-size: 2.8em;
+		
+		&.ng-enter {
+			-webkit-animation: fadeInDown 0.5s;
+			-moz-animation: fadeInDown 0.5s;
+			-ms-animation: fadeInDown 0.5s;
+			animation: fadeInDown 0.5s;
+		}
+		
+		&.ng-leave {
+			-webkit-animation: fadeOutUp 0.5s;
+			-moz-animation: fadeOutUp 0.5s;
+			-ms-animation: fadeOutUp 0.5s;
+			animation: fadeOutUp 0.5s;
+		}
 	}
 
 	h2 {
@@ -100,6 +93,23 @@ body {
 	h1, h2 {
 		font-weight: normal;
 		margin: 0;
+	}
+
+	h2, p {
+
+		&.ng-enter {
+			-webkit-animation: fadeInUp 0.5s;
+			-moz-animation: fadeInUp 0.5s;
+			-ms-animation: fadeInUp 0.5s;
+			animation: fadeInUp 0.5s;
+		}
+		
+		&.ng-leave {
+			-webkit-animation: fadeOutDown 0.5s;
+			-moz-animation: fadeOutDown 0.5s;
+			-ms-animation: fadeOutDown 0.5s;
+			animation: fadeOutDown 0.5s;
+		}
 	}
 
 	p {
