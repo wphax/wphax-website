@@ -58,10 +58,14 @@ body {
     -ms-animation: fadeInUp 1s;
     animation: fadeInUp 1s; }
   #headings p.ng-enter {
-    -webkit-animation: fadeInUpBig 1s;
-    -moz-animation: fadeInUpBig 1s;
-    -ms-animation: fadeInUpBig 1s;
-    animation: fadeInUpBig 1s; }
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation: fadeInUp 1s;
+    -moz-animation: fadeInUp 1s;
+    -ms-animation: fadeInUp 1s;
+    animation: fadeInUp 1s; }
   #headings h1 {
     color: #FFD34E;
     font-size: 2.8em; }
