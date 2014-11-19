@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="store">
+<head>
+	<title>Freelance Web Developer - Jared Helgeson</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="header">
+		<ul id="nav">
+			<li><a href="#/">Home</a></li>
+			<li><a href="#/about">About</a></li>
+			<li><a href="#/work">Work</a></li>
+		</ul>
+	</div>
+
+	<div ng-view></div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

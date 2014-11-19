@@ -1,0 +1,91 @@
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+body {
+	background-color: #105B63;
+	color: #FFFAD5;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+
+	a {
+		color: #DB9E36;
+
+		&:hover {
+			color: #FFD34E;
+		}
+	}
+}
+
+#header {
+	background: #0C464C;
+	border-bottom: #136973 1px dashed;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 3em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+
+		li {
+			line-height: 3em;
+			display: inline-block;
+			*display: inline; /* ie7 */
+			*zoom: 1; /* ie7 */
+		}
+	}
+
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 0 1em;
+	}
+}
+
+#home, #about, #work {
+	position: absolute;
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+}
+
+#headings {
+	font-size: 1.8em;
+	font-family: 'Cabin Condensed', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+
+	h1 {
+		color: #FFD34E;
+		font-size: 2.8em;
+	}
+
+	h2 {
+		color: #FFFAD5;
+	}
+
+	h1, h2 {
+		font-weight: normal;
+		margin: 0;
+	}
+
+	p {
+		font-size: 0.6em;
+		text-transform: lowercase;
+
+		span {
+			color: #BD4932;
+		}
+	}
+}
