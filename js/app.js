@@ -2,7 +2,7 @@
 (function() {
   var app;
 
-  app = angular.module('store', ['ngRoute']);
+  app = angular.module('store', ['ngRoute', 'ngAnimate']);
 
   app.controller('storeController', function() {
     this.pages = pages;

@@ -1,4 +1,4 @@
-app = angular.module 'store', [ 'ngRoute' ]
+app = angular.module 'store', [ 'ngRoute', 'ngAnimate' ]
 
 app.controller 'storeController', ->
 	this.pages = pages
