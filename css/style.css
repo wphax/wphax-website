@@ -36,49 +36,103 @@ body {
 #home, #about, #work {
   position: absolute;
   display: inline-table;
-  width: 100%;
+  width: 80%;
   height: 100%;
+  padding-top: 4em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   overflow: hidden; }
 
 #headings {
-  font-size: 1.8em;
-  font-family: 'Cabin Condensed', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle; }
+  font-family: 'Cabin Condensed', sans-serif; }
   #headings h1 {
     color: #FFD34E;
+    font-weight: normal; }
+
+#home #headings, #work #headings {
+  font-size: 1.8em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase; }
+  #home #headings h1, #work #headings h1 {
     font-size: 2.8em; }
-    #headings h1.ng-enter {
+    #home #headings h1.ng-enter, #work #headings h1.ng-enter {
       -webkit-animation: fadeInDown 0.5s;
       -moz-animation: fadeInDown 0.5s;
       -ms-animation: fadeInDown 0.5s;
       animation: fadeInDown 0.5s; }
-    #headings h1.ng-leave {
+    #home #headings h1.ng-leave, #work #headings h1.ng-leave {
       -webkit-animation: fadeOutUp 0.5s;
       -moz-animation: fadeOutUp 0.5s;
       -ms-animation: fadeOutUp 0.5s;
       animation: fadeOutUp 0.5s; }
-  #headings h2 {
+  #home #headings h2, #work #headings h2 {
     color: #FFFAD5; }
-  #headings h1, #headings h2 {
+  #home #headings h1, #home #headings h2, #work #headings h1, #work #headings h2 {
     font-weight: normal;
     margin: 0; }
-  #headings h2.ng-enter, #headings p.ng-enter {
+  #home #headings h2.ng-enter, #home #headings p.quote.ng-enter, #work #headings h2.ng-enter, #work #headings p.quote.ng-enter {
     -webkit-animation: fadeInUp 0.5s;
     -moz-animation: fadeInUp 0.5s;
     -ms-animation: fadeInUp 0.5s;
     animation: fadeInUp 0.5s; }
-  #headings h2.ng-leave, #headings p.ng-leave {
+  #home #headings h2.ng-leave, #home #headings p.quote.ng-leave, #work #headings h2.ng-leave, #work #headings p.quote.ng-leave {
     -webkit-animation: fadeOutDown 0.5s;
     -moz-animation: fadeOutDown 0.5s;
     -ms-animation: fadeOutDown 0.5s;
     animation: fadeOutDown 0.5s; }
-  #headings p {
+  #home #headings p.quote, #work #headings p.quote {
     font-size: 0.6em;
     text-transform: lowercase; }
-    #headings p span {
+    #home #headings p.quote span, #work #headings p.quote span {
       color: #BD4932; }
+
+#about {
+  clear: both; }
+  #about #headings {
+    width: 600px;
+    margin: 0 auto; }
+    #about #headings h1 {
+      text-align: center;
+      text-transform: uppercase; }
+      #about #headings h1.ng-enter {
+        -webkit-animation: fadeInDown 0.5s;
+        -moz-animation: fadeInDown 0.5s;
+        -ms-animation: fadeInDown 0.5s;
+        animation: fadeInDown 0.5s; }
+      #about #headings h1.ng-leave {
+        -webkit-animation: fadeOutUp 0.5s;
+        -moz-animation: fadeOutUp 0.5s;
+        -ms-animation: fadeOutUp 0.5s;
+        animation: fadeOutUp 0.5s; }
+    #about #headings .left {
+      width: 100px;
+      margin-right: 50px;
+      float: left; }
+      #about #headings .left.ng-enter {
+        -webkit-animation: fadeInLeft 0.5s;
+        -moz-animation: fadeInLeft 0.5s;
+        -ms-animation: fadeInLeft 0.5s;
+        animation: fadeInLeft 0.5s; }
+      #about #headings .left.ng-leave {
+        -webkit-animation: fadeOutLeft 0.5s;
+        -moz-animation: fadeOutLeft 0.5s;
+        -ms-animation: fadeOutLeft 0.5s;
+        animation: fadeOutLeft 0.5s; }
+    #about #headings .right {
+      width: 450px;
+      float: right; }
+      #about #headings .right.ng-enter {
+        -webkit-animation: fadeInUp 0.5s;
+        -moz-animation: fadeInUp 0.5s;
+        -ms-animation: fadeInUp 0.5s;
+        animation: fadeInUp 0.5s; }
+      #about #headings .right.ng-leave {
+        -webkit-animation: fadeOutDown 0.5s;
+        -moz-animation: fadeOutDown 0.5s;
+        -ms-animation: fadeOutDown 0.5s;
+        animation: fadeOutDown 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
